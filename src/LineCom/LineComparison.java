@@ -24,6 +24,9 @@ public class LineComparison {
         // Calling method to check equality of two lines
         isEqual(length1,length2);
 
+        //Calling method to compare two lines
+        lineComparison(length1,length2);
+
     }
 
     static Integer calculateLength(int x1, int y1, int x2, int y2)
@@ -64,5 +67,23 @@ public class LineComparison {
             System.out.println("Two Lines are not equal");
         }
 
+    }
+
+    // Method for comparing lines
+
+    static void lineComparison(Integer length1, Integer length2)
+    {
+        if (length1.compareTo(length2) == 0)
+        {
+            System.out.println("Line 1 and Line 2 are equal");
+        }
+        else if (length1.compareTo(length2) > 0)
+        {
+            System.out.println("Line 1 is longer than Line 2");
+        }
+        else
+        {
+            System.out.println("Line 2 is longer than Line 1");
+        }
     }
 }
